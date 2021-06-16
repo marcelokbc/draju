@@ -14,7 +14,7 @@ class AppointmentsController < ApplicationController
 
   def create
     @appointments = Appointment.new(appointment_params)
-    @appointments.list = @animals
+    @appointments.animal = @animals
     if @appointment.save
       redirect_to appointment_path(@appointments)
     else
@@ -30,7 +30,7 @@ class AppointmentsController < ApplicationController
   private
 
   def set_appointment
-    @appointments = Appointment.find(params[:animals_id])
+    @appointments = Appointment.find(params[:animal_id])
   end
 
   def set_animals
