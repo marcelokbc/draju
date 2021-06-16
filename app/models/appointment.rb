@@ -1,5 +1,5 @@
 class Appointment < ApplicationRecord
-  has_many :animals
+  belongs_to :animals
 
   validate :name, :datetime, :address, :phone, presence: true
 end
