@@ -1,0 +1,8 @@
+<%= simple_form_for(appointment) do |f| %>
+  <%= f.input :name, label: "Nome" %>
+  <%= f.input :address, label: "Endereço" %>
+  <%= f.input :phone, label: "Telefone" %>
+  <%= f.input :start_at, label: "Data" %>
+  <%= f.association :animal %>
+  <%= f.submit "Agendar Consulta" %>
+<% end %>
