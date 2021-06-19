@@ -1,6 +1,6 @@
 class AppointmentsController < ApplicationController
-  before_action :set_appointment
-  before_action :set_animals, only: [:show, :destroy]
+  # before_action :set_appointment
+  # before_action :set_animals
 
   def index
     @appointments = Appointment.all
@@ -9,18 +9,19 @@ class AppointmentsController < ApplicationController
   def show; end
 
   def new
-    @appointments = Appointment.new
+    @appointment = Appointment.new
   end
 
   def create
-    @appointments = Appointment.new(appointment_params)
-    @appointments.animal = @animals
+    @appointment = Appointment.new(appointment_params)
+    @appointment.animal = @animal
     if @appointment.save
-      redirect_to appointment_path(@appointments)
+      redirect_to appointments_path
     else
       render :new
     end
   end
+
 
   def destroy
     @appointment.destroy
@@ -38,6 +39,6 @@ class AppointmentsController < ApplicationController
   end
 
   def appointment_params
-    params.require(:appointments).permit(:name, :date, :address, :phone)
+    params.require(:appointment).permit(:name, :start_at, :address, :phone, :animal_id)
   end
 end
