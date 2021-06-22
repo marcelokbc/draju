@@ -1,1 +1,114 @@
-<%= render 'banner' %>
+<section id="home" class="d-flex"><!-- inicio seção capa -->
+      <div class="container align-self-center">
+        <div class="row">
+          <div class="col-md-12 capa">
+            <h1>Dra. Juliana Viviani Martins</h1>
+            <p class="display-4 mb-4">Atendimento Veterinário Domiciliar</p>
+            <a href="" class="btn btn-custom btn-branco">
+              Agendar consulta
+            </a>
+          </div>
+        </div>
+      </div>
+    </section><!-- /seção capa -->
+
+    <section id="servicos" class="caixa"><!-- inicio section -->
+      <div class="container"><!-- inicio container -->
+        <div class="row"> <!-- primeiro grid -->
+          <div class="col-md-6">
+            <div class="row albuns" ><!-- segundo grid -->
+              <div class="col-md-6">
+              	<%=  image_tag("img1.png", class: "img-fluid d-none d-md-block") %>
+              </div>
+              <div class="col-md-6">
+                <%=  image_tag("img2.png", class: "img-fluid d-none d-md-block") %>
+              </div>
+            </div>
+            <div class="row albuns"><!-- segundo grid -->
+              <div class="col-md-6">
+                <%=  image_tag("img3.png", class: "img-fluid d-none d-md-block") %>
+              </div>
+              <div class="col-md-6">
+                <%=  image_tag("img4.png", class: "img-fluid d-none d-md-block") %>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2> Você conhece a Dra. Juliana? </h2>
+
+            <h3>Comodidade</h3>
+            <p>A dra. Juliana vai até sua residência atender seu pet, assim ele não precisa passar pelo stress de sair da sua casa e ir até a clínica.</p>
+
+            <h3>Serviços</h3>
+            <p>A dra. Juliana realiza consultas, vacinas e diversos tipos de serviços visando o bem estar do seu pet.</p>
+
+            <h3>Procedimentos</h3>
+            <p>A dra. Juliana realiza cirurgias como castração entre outros, para esclarecimentos agende sua consulta.</p>
+          </div>
+        </div><!-- /primeiro grid -->
+      </div><!-- /container -->
+    </section><!--/fim section -->
+
+    <section id="recursos" class="caixa"><!-- inicio recursos -->
+      <div class="container"><!-- inicio container -->
+        <div class="row"><!-- inicio grid -->
+          <div class="col-md-6">
+            <h2> Fácil </h2>
+            <h3>Descobrir</h3>
+            <p>Agende sua consulta e conheça a dra. Juliana, ela estará pronta para atender você e seu pet.</p>
+            <h3>Navegar</h3>
+            <p>Um site completo para você conseguir ter a certeza que está fazendo a melhor escolha.</p>
+            <h3>Buscar</h3>
+            <p>Você não sabe quem contratar, vejam o que estão achando da Dra. Juliana.</p>
+          </div>
+          <div class="col-md-6">
+            
+          </div>
+        </div><!--/grid -->
+      </div><!--/container -->
+    </section><!--/recursos -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="text-white">Dr@. Juliana</h3>
+          </div>
+          <div class="col-md-3">
+            <h4>Company</h4>
+            <ul class="navbar-nav">
+              <li><a href="">Sobre</a></li>
+              <li><a href="">Novidades</a></li> 
+              <li><a href="">Curiosidades</a></li> 
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Links uteis</h4>
+            <ul class="navbar-nav">
+              <li><a href="">Ajuda</a></li>
+              <li><a href="">Presentes</a></li>  
+              <li><a href="">Na web</a></li> 
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li>
+                <a href="">
+                  <%= image_tag("facebook.png") %>	
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <%= image_tag("instagram.png") %>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <%= image_tag("twitter.png") %>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
