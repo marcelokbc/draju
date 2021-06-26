@@ -1,5 +1,5 @@
 class AnimalsController < ApplicationController
-	before_action :appointments_list, only: [:edit, :show, :update, :destroy]
+	before_action :appointments_list, only: [:edit, :update, :destroy]
 
   def index
     @animals = Animal.all
@@ -8,12 +8,12 @@ class AnimalsController < ApplicationController
   def show; end
 
   def new
-    @animals = Animal.new
+    @animal = Animal.new
   end
 
   def create
-    @animals = Animal.new(animals_params)
-    if @animals.save
+    @animal = Animal.new(animals_params)
+    if @animal.save
       redirect_to animal_path(@animal)
     else
       render :new
@@ -42,6 +42,6 @@ class AnimalsController < ApplicationController
   end
 
   def animals_params
-    params.require(:animals).permit(:name, :age, :specie)
+    params.require(:animal).permit(:name, :photo, :age, :specie, :user_id)
   end
 end

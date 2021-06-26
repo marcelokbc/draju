@@ -1,4 +1,42 @@
+<%= render 'shared/navbar' %>
+
 <div class="container">
-  <h1>Agendamentos</h1>
-  <%= link_to "Agendar", new_appointment_path %>
+  <div class="user-dash">
+
+    <% @animals.each do |animal| %>
+      <% if current_user.id == animal.user_id %>
+      <div class="animal-box">
+        <div class="row">
+            <div class="col-lg-3">
+              <div class="animal-container">
+                <img class="pet-img" src="https://res.cloudinary.com/dloadb2bx/image/upload/v1624729031/xmnvbqhendtpo4gwzmkv.jpg" alt="">
+                <p>Nome: <%= animal.name %></p>
+                <p>Idade: <%= animal.age %></p>
+                <p>Tutor: <%= current_user.email %></p>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <p>
+                <%= link_to "Adicionar Pet", new_animal_path, class: "btn btn-custom-appontment" %>
+              </p>
+              <p>
+                <%= link_to "Agendar Consulta", new_appointment_path, class: "btn btn-custom-appontment" %>
+              </p>
+
+              <h2>Consultas agendadas</h2>
+              <% @appointments.each do |appointment| %>
+
+              <% end %>
+            </div>
+          </div>
+      </div>
+
+      <div class="prontuario">
+        <h2>Prontuário</h2>
+      </div>
+      <% end %>
+
+    <% end %>
+
+  </div>
 </div>
