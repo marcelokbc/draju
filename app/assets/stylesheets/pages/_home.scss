@@ -14,6 +14,96 @@ body .home-page {
     margin-top: 250px;
   }
 
+  h1 {
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  margin-bottom: 50px;
+  color: white;
+  }
+
+  h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+  }
+
+  h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+  }
+
+  p {
+    font-size: 1.4em;
+    font-weight: 600;
+  }
+
+    /* Estrutura de conteúdos
+  ------------------------------*/
+  .caixa {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #servicos {
+    background: white;
+  }
+
+  #servicos h2, h3 {
+    color: #17a2b8;
+  }
+
+  #recursos h2 {
+    color: white;
+  }
+
+  #recursos h3 {
+    color: black;
+  }
+
+  #recursos p {
+    color: white;
+  }
+
+  .albuns {
+    padding: 10px 0;
+  }
+
+  .rotacionar {
+    transform: rotate(30deg);
+    padding-left: 100px;
+  }
+
+    /* Capa
+  ------------------------------*/
+
+
+  .capa {
+    text-align: center;
+  }
+
+  .btn-custom {
+    color: white;
+    border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+  }
+
+  .btn-branco {
+    border: 2px solid white;
+  }
+
+  .btn-branco:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .btn-bottom-space{
+    margin-bottom: 100px;
+  }
+
+
+
 }
 
 /* Navbar
@@ -31,68 +121,7 @@ body .home-page {
   margin: 0 10px;
 }
 
-/* Capa
-------------------------------*/
 
-
-.capa {
-	text-align: center;
-}
-
-.btn-custom {
-	color: white;
-	border-radius: 500px;
-	text-transform: uppercase;
-	transition: background 0.4s, color 0.4s;
-	padding: 10px 20px;
-}
-
-.btn-branco {
-	border: 2px solid white;
-}
-
-.btn-branco:hover {
-	background-color: white;
-	color: black;
-}
-
-.btn-bottom-space{
-  margin-bottom: 100px;
-}
-/* Estrutura de conteúdos
-------------------------------*/
-.caixa {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-#servicos {
-	background: white;
-}
-
-#servicos h2, h3 {
-	color: #17a2b8;
-}
-
-#recursos h2 {
-	color: white;
-}
-
-#recursos h3 {
-	color: black;
-}
-
-#recursos p {
-	color: white;
-}
-
-.albuns {
-	padding: 10px 0;
-}
-
-.rotacionar {
-	transform: rotate(30deg);
-	padding-left: 100px;
-}
 /*Rodapé
 ------------------------------*/
 footer {
@@ -127,29 +156,6 @@ footer ul li {
 }
 /* Tipografia
 ------------------------------*/
-h1 {
-	font-weight: 900;
-	letter-spacing: -0.05em;
-	margin-bottom: 50px;
-	color: white;
-}
-
-h2 {
-	font-size: 3em;
-	font-weight: 700;
-	letter-spacing: -0.04em;
-}
-
-h3 {
-	font-size: 2em;
-	font-weight: 700;
-	letter-spacing: -0.04em;
-}
-
-p {
-	font-size: 1.4em;
-	font-weight: 600;
-}
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { }
