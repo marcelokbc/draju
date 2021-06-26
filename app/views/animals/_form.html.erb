@@ -1,0 +1,8 @@
+<%= simple_form_for(animal) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :age %>
+  <%= f.input :photo %>
+  <%= f.input :specie %>
+  <%= f.association :user %>
+  <%= f.submit "Cadastrar" %>
+<% end %>
